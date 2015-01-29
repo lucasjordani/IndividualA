@@ -49,16 +49,29 @@ public class Main {
 							System.out.println("O animal que você está pensando é o Lagarto");
 						else
 							System.out.println("O animal que você está pensando é o Camaleão");
-						} else {
-							System.out.println("Ele cava buracos?");
-							System.out.println("1 para Sim ou 0 Não");
-							resposta = scan.nextInt();
-						} if (resposta == 1)
-							System.out.println("O animal que você está pensando é o Urso");
+					} else {
+						System.out.println("Ele cava buracos?");
+						System.out.println("1 para Sim ou 0 Não");
+						resposta = scan.nextInt();
+					}
+					if (resposta == 1){
+						System.out.println("Ele é bem pequeno?");
+						System.out.println("1 para Sim ou 0 Não");
+						resposta = scan.nextInt();
+						if (resposta == 1)
+							System.out.println("O animal que você está pensando é a Topeira");
 						else
+							System.out.println("O animal que você está pensando é o Urso");
+					} else {
+						System.out.println("Será que ele se pendura em árvores?");
+						System.out.println("1 para Sim ou 0 Não");
+						resposta = scan.nextInt();
+						if (resposta == 1)
 							System.out.println("O animal que você está pensando é o Macaco");
-				}
+						else
+							System.out.println("O animal que você está pensando é o Cachorro");
+						}
+					}
 			}
 		}
-			
-	}
+}
